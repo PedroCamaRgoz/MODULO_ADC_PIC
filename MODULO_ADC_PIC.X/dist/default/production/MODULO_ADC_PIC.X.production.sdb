@@ -1,0 +1,311 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"17 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Analog_to_Digital.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"37
+[v _adc_read adc_read `(v  1 e 1 0 ]
+"44
+[v _adc_value adc_value `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"96 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\dispLCD4vias.c
+[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
+"131
+[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
+"147
+[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
+"153
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+"176
+[v _LCD_str LCD_str `(v  1 e 1 0 ]
+"193
+[v _LCD_Texto LCD_Texto `(v  1 e 1 0 ]
+"207
+[v _LCD_num LCD_num `(v  1 e 1 0 ]
+"250
+[v _dispLCD_clr dispLCD_clr `(v  1 e 1 0 ]
+"255
+[v _lcd_b0 lcd_b0 `(uc  1 e 1 0 ]
+"260
+[v _lcd_b1 lcd_b1 `(uc  1 e 1 0 ]
+"14 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"13 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Monitor_interruption.c
+[v _isr isr `II(v  1 e 1 0 ]
+"19 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\timers.c
+[v _timer0_init timer0_init `(v  1 e 1 0 ]
+"29
+[v _t0_init_cont t0_init_cont `(v  1 e 1 0 ]
+"35
+[v _timer0_get timer0_get `(v  1 e 1 0 ]
+"42
+[v _Play_timer0 Play_timer0 `(v  1 e 1 0 ]
+"47
+[v _Pause_timer0 Pause_timer0 `(v  1 e 1 0 ]
+"52
+[v _status_timer0 status_timer0 `(ui  1 e 2 0 ]
+[s S439 . 7 `*.27(v 1 init 1 0 `*.27(v 1 string 1 1 `*.27(v 1 str_position 1 2 `*.27(v 1 number 1 3 `*.27(v 1 clr 1 4 `*.27(uc 1 B0 1 5 `*.27(uc 1 B1 1 6 ]
+"29 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X/library_shelf.h
+[v _print print `S439  1 e 7 0 ]
+"13 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Analog_to_Digital.c
+[v _read_value read_value `ui  1 e 2 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S22 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S31 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S36 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES36  1 e 1 @11 ]
+[s S224 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S232 . 1 `S224 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES232  1 e 1 @12 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S90 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1276
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S104 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S107 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S110 . 1 `S90 1 . 1 0 `S95 1 . 1 0 `S104 1 . 1 0 `S107 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES110  1 e 1 @31 ]
+[s S366 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S373 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S377 . 1 `S366 1 . 1 0 `S373 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES377  1 e 1 @129 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S275 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1619
+[u S284 . 1 `S275 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES284  1 e 1 @136 ]
+[s S138 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1718
+[u S146 . 1 `S138 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES146  1 e 1 @140 ]
+"2970
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S75 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2991
+[u S81 . 1 `S75 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES81  1 e 1 @159 ]
+[s S54 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"3404
+[u S63 . 1 `S54 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES63  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+[s S265 . 1 `uc 1 BUS 1 0 :4:0 
+`uc 1 RS 1 0 :1:4 
+`uc 1 EN 1 0 :1:5 
+`uc 1 B0 1 0 :1:6 
+`uc 1 B1 1 0 :1:7 
+]
+"50 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\dispLCD4vias.c
+[u S271 . 1 `S265 1 . 1 0 ]
+[v _LCDbits LCDbits `VES271  1 e 1 @8 ]
+"15 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\timers.c
+[v _timer0_value timer0_value `ui  1 e 2 0 ]
+"14 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"26
+} 0
+"44 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Analog_to_Digital.c
+[v _adc_value adc_value `(ui  1 e 2 0 ]
+{
+"47
+} 0
+"17
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"35
+} 0
+"207 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\dispLCD4vias.c
+[v _LCD_num LCD_num `(v  1 e 1 0 ]
+{
+"210
+[v LCD_num@div div `i  1 a 2 19 ]
+"212
+[v LCD_num@sinal sinal `uc  1 a 1 18 ]
+"211
+[v LCD_num@size size `uc  1 a 1 17 ]
+"207
+[v LCD_num@lin lin `uc  1 p 1 9 ]
+[v LCD_num@col col `uc  1 p 1 10 ]
+"208
+[v LCD_num@num num `i  1 p 2 11 ]
+[v LCD_num@tam tam `uc  1 p 1 13 ]
+"247
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"153 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\dispLCD4vias.c
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+{
+"174
+} 0
+"193
+[v _LCD_Texto LCD_Texto `(v  1 e 1 0 ]
+{
+"195
+[v LCD_Texto@pos pos `uc  1 a 1 10 ]
+"193
+[v LCD_Texto@lin lin `uc  1 p 1 6 ]
+[v LCD_Texto@col col `uc  1 p 1 7 ]
+[v LCD_Texto@str str `*.24DCuc  1 p 1 8 ]
+"204
+} 0
+"147
+[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
+{
+[v dispLCD_lincol@lin lin `uc  1 a 1 wreg ]
+[v dispLCD_lincol@lin lin `uc  1 a 1 wreg ]
+[v dispLCD_lincol@col col `uc  1 p 1 3 ]
+"149
+[v dispLCD_lincol@lin lin `uc  1 a 1 5 ]
+"150
+} 0
+"96
+[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
+{
+[v dispLCD_instReg@i i `uc  1 a 1 wreg ]
+[v dispLCD_instReg@i i `uc  1 a 1 wreg ]
+"98
+[v dispLCD_instReg@i i `uc  1 a 1 2 ]
+"128
+} 0
+"131
+[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
+{
+[v dispLCD_dataReg@d d `uc  1 a 1 wreg ]
+[v dispLCD_dataReg@d d `uc  1 a 1 wreg ]
+"133
+[v dispLCD_dataReg@d d `uc  1 a 1 1 ]
+"144
+} 0
+"13 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Monitor_interruption.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"27
+} 0
+"29 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\timers.c
+[v _t0_init_cont t0_init_cont `(v  1 e 1 0 ]
+{
+"33
+} 0
+"37 C:\Users\Pedro\MPLABXProjects\MODULO_ADC_PIC.X\Analog_to_Digital.c
+[v _adc_read adc_read `(v  1 e 1 0 ]
+{
+"42
+} 0
